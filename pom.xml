@@ -15,7 +15,8 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <properties>
-    <gcloud.version>1.9.18-SNAPSHOT</gcloud.version>
+    <!--  <gcloud.version>1.9.18-SNAPSHOT</gcloud.version> -->
+    <gcloud.version>2.0.9.111.v20160527</gcloud.version>
   </properties>
 
   <parent>
@@ -85,7 +86,8 @@
         <version>${gcloud.version}</version>
         <configuration>
           <gcloud_project>${gcloud.project}</gcloud_project>
-          <application_directory>target/docker/</application_directory>
+          <version>${app.version}</version>
+          <staging_directory>target/docker/</staging_directory>
         </configuration>
       </plugin>
     </plugins>
