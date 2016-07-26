@@ -53,9 +53,7 @@
         <configuration>
           <imageName>${project.artifactId}</imageName>
           <baseImage>java:8</baseImage>
-          <entryPoint>["java",
-            "-Djava.security.egd=file:/dev/./urandom", "-jar",
-            "/app/${project.build.finalName}.jar"]</entryPoint>
+          <entryPoint>["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/${project.build.finalName}.jar"]</entryPoint>
           <exposes>
             <expose>8080</expose>
           </exposes>
