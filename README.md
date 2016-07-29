@@ -107,5 +107,6 @@ Build the Docker image, so that it generates Dockerfile
 
 Finally, deploy the application using `gcloud` plugin:
 
-    mvn gcloud:deploy -Dgcloud.project=YOUR_PROJECT_ID
+    mvn gcloud:deploy -Dgcloud.project=YOUR_PROJECT_ID -Dapp.version=VERSION
+
     
